@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>Class Details</title>
+</head>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>degree</td>
+            <td>branch</td>
+            <td>year</td>
+            <td>subject</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["degree"]}}</td>
+               <td>{{row["branch"]}}</td>
+               <td>{{ row["year"]}}</td>
+               <td>{{row['subject']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>

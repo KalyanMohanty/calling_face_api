@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>Registration Details</title>
+</head>
+
+   <body>
+      <table border = 1>
+         <thead>
+            <td>username</td>
+            <td>email</td>
+            <td>password</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["username"]}}</td>
+               <td>{{row["email"]}}</td>
+               <td> {{ row["password"]}}</td>
+               <td>{{row['pin']}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>
